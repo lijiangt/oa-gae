@@ -1,0 +1,25 @@
+application: url-redirector
+version: 3
+runtime: python
+api_version: 1
+
+default_expiration: "3650d"
+
+handlers:
+- url: /s
+  static_dir: s
+ 
+- url: /favicon.ico
+  static_files: static/favicon.ico
+  upload: static/favicon.ico
+  mime_type: image/x-icon
+  expiration: "30m"
+  
+- url: /admin/.*
+  script: main.py
+  login: admin
+  
+- url: /.*
+  script: main.py
+
+  
