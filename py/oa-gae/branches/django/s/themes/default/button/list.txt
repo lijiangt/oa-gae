@@ -1,0 +1,12 @@
+back.gif				后退  
+delete.gif			删除 
+edit.gif				编辑	
+sort_asc.gif		升序排序  
+sort_desc.gif   降序排序
+tooltip.gif     工具提示
+view.gif        查看
+calendar.gif  日历
+
+audit.gif  审核
+deny.gif  禁止
+restore.gif 恢复

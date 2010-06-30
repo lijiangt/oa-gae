@@ -1,0 +1,36 @@
+#imgTitle {
+	height:4px;margin-right:-20px; margin-bottom:5px;position: relative; line-height:14px;; 
+}
+#imgTitle_up {
+	left: 0px; HEIGHT: 1px; text-align: left
+}
+#imgTitle_down {
+	left: 0px; text-align: right
+}
+#imgTitle .imgClass {
+	border-RIGHT: #000 0px solid; border-TOP: #000 0px solid; border-left: #000 0px solid; border-bottom: #000 0px solid
+}
+#imgTitle #txtFrom {
+	vertical-align: middle; text-align: center
+}
+#imgTitle .button {
+	padding-RIGHT: 9px; padding-left: 7px; background: #7b7b63; padding-bottom: 2px; margin: 0px; font: 12px sans-serif; border-left: #fff 1px solid; padding-TOP: 2px; text-decoration: none
+}
+#imgTitle A.button {
+	color: #ffffff; font-family: sans-serif; background-color: #000000; text-decoration: none
+}
+#imgTitle A.button:link {
+	color: #ffffff; font-family: sans-serif; background-color: #000000; text-decoration: none
+}
+#imgTitle A.button:visited {
+	color: #ffffff; font-family: sans-serif; background-color: #000000; text-decoration: none
+}
+#imgTitle A.button:hover {
+	background: #fff; color: #fff; font-family: sans-serif; text-decoration: none
+}
+.buttonDiv {
+	background: #000000; float: left; vertical-align: middle; width: 21px; HEIGHT: 1px; text-align: center
+}
+#imgTitle .trans {
+	FILTER: progid:DXImageTransform.Microsoft.Alpha(startX=0, startY=0, finishX=100, finishY=100,style=1,opacity=0,finishOpacity=40); width: 90px; background-color: #000
+}

@@ -1,0 +1,380 @@
+table{
+	padding:0;
+	margin:0;
+	border-collapse:collapse;
+	border:#ddd 1px solid;
+	/*#CBD0D4 reserved for other usage*/
+	font-size:12px;
+	width:100%;
+	margin-bottom:3px;
+}
+table#listBody{	
+	    width:100%;
+		overflow:hidden;
+		table-layout:fixed;
+}
+table.reg{
+	width:40%;
+}
+table.main tbody tr th{
+ width:10%;
+ background:#efefef;
+ text-align:right;
+ white-space:nowrap;
+}
+ table.main tfoot tr th{
+    padding-right:400px;
+    padding-right:0px\9;
+    text-align:center;
+}
+table th,table td{
+	padding-left:2px;
+	padding-right:2px;
+	border:#ddd 1px solid;
+    border-collapse:collapse;
+	height:25px;
+	line-height:25px;
+   }
+table#listBody td,table#listBody td span{	
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	word-break:keep-all;
+}
+table#listBody thead tr th{	
+	white-space:nowrap;
+	overflow:hidden;
+	word-break:keep-all;
+}
+table#listBody thead tr th{	
+	text-align:center;
+}
+table#listBody tbody tr td{	
+	white-space:nowrap;
+	overflow:hidden;
+	word-break:keep-all;
+}
+table#listBody tbody tr{	
+	text-align:center;
+}
+table#listBody thead tr.centerTd th#courseSelect{	
+	width:4%;
+	background:red;
+}
+table thead{
+	height:30px;
+	line-height:30px;
+	font-weight:bold;
+	color:#ed7d00;
+	}
+table#editBody thead tr td,table#editBody thead tr th{
+  text-align:center;
+}
+table#editBody2 thead tr td{
+   text-align:center;
+   background:#efefef;
+}
+table#editBody tbody#site tr th{
+  width:10%;
+}
+table#editBody tbody tr .labName{
+    width:240px;
+    width:29%\9;
+    *width:25%;
+    *+width:25%;
+}
+table#editBody tbody tr .labName option{
+	 width:210px;
+	 overflow:hidden;
+}
+ 
+table#editBody tbody#asset tr td select{
+	 width:80%\9;
+}
+table#editBody tbody#article_edit tr th{
+  width:10%;
+}
+table#editBody tbody#user_edit tr th{
+  width:14%;
+}
+table#editBody tbody#user_edit tr td input{
+  width:15%;
+}
+table#editBody tbody#user_edit tr#role td input{
+  width:3%;
+}
+table#editBody tbody#group_edit tr th{
+  width:8%;
+}
+table#editBody tbody#grouptype_edit tr th{
+  width:8%;
+}
+table#editBody tbody#role_edit tr th{
+  width:10%;
+}
+table#editBody tbody#field_edit tr th{
+  width:10%;
+}
+#mainBody table#editBody tbody#site tr td input{
+     width:3%;
+     text-align:left;
+}
+table tbody th{	
+  font-weight:normal;
+}
+table tbody td.nowrap{
+	white-space:nowrap; 
+	overflow:hidden; 
+	word-break:keep-all;
+}
+table#viewBody tbody th{
+	width:12%;
+	text-align:right;
+	font-weight: bold;
+	background:#efefef;
+}
+table#viewBody tbody#user_edit tr th{
+	width:7%;
+}
+table#viewBody tbody tr td table tr th{
+	width:9%;
+	width:10%\9;
+}
+table#viewBody tbody td{
+	padding-left:10px;
+	padding-top:10px;
+}
+table#viewBody  tr td #product{
+	width:1046px;
+}
+table#viewBody tr td #product .pp{
+	width:76px;
+	height:70px;
+/*
+		border:1px solid #B5B5B5;
+	background:#eee;
+*/
+	
+}
+table#viewBody tr td #product .pp .text{
+    margin-top:-3px\9;
+	*margin-top:-3px;
+	/*border-top:1px solid #B5B5B5;*/
+	text-align:center;
+	width:76px;
+	height:25px;
+}
+table#viewBody tr td #product .pp  img{
+	width:76px;
+	height:45px;
+}
+table#viewBody tbody td .title{
+	margin:2px 0 5px 0;
+	padding:5px 15px;
+	text-align:center;
+	border-bottom:1px dotted #333;
+  }
+table#viewBody tbody td .title h1{
+	font-size:14px;
+	height:35px;
+	color:#ed7d00;
+	line-height:35px;
+}
+table#viewBody tbody td .title .subtitle{
+	color:#333;
+	}
+table#viewBody tbody td .title .subtitle span{
+	margin:0 8px;
+}
+table#viewBody tbody td .title .subtitle a{
+	color:#333;
+}
+table#viewBody tbody td .title .subtitle a:hover{
+	color:#f00;
+}
+table#viewBody tbody td .content{
+	padding:0 15px 15px 15px;
+}
+table tfoot{
+	height:20px;
+	line-height:30px;
+  }
+table tfoot th{
+	text-align:center;
+	width:0;
+	}
+table tfoot td{
+	text-align:center;
+}
+table#editBody tbody tr th{
+	width:16%;
+    background:#efefef;
+	font-weight:bold;
+	text-align:right;
+}
+table#editBody1 tbody tr th{
+	width:16%;
+    background:#efefef;
+	font-weight:bold;
+	text-align:right;
+}
+table#editBody tbody tr#radio td{
+	 border-right:none;
+	 border-bottom:none;
+}
+table#editBody tbody tr td table#editBody thead tr  th.date1{
+     width:20%;
+      
+}
+table#editBody tbody tr td table#editBody thead tr  th.classno{
+     width:6%;
+}
+table#editBody tbody tr td table#editBody2 tr  td input.date{
+     width:62%;
+     text-align:center;
+}
+table#editBody tbody tr td input.lab{
+     width:62%;
+}
+table#editBody tbody tr td input.dateSearch{
+     width:12%;
+} 
+table#editBody tbody tr td table#editBody thead tr th,table#editBody tbody tr td table#editBody thead th{
+     text-align:center;
+} 
+table#editBody  tr td#arg input{
+      width:40%;
+}
+table#editBody tbody td span{
+	padding-left:5px;
+}
+table#editBody tbody td label{
+	color:#549C00;
+}
+table#editBody tbody td label a{
+	color:#549C00;
+}
+table#editBody tbody td label a:hover{
+	color:#f00;
+}
+table#editBody tfoot th,table#editBody tr th{
+	text-align:center;
+}
+table .leftTd{
+	text-align:left !important;
+    padding-left:10px;
+	}
+table .rightTd{
+	text-align:right !important;
+	padding-right:10px;
+	}
+table .centerTd{
+  text-align:center !important;
+}
+table .cbox{
+	width:20px;
+}
+table .name{
+	width:70px;
+}
+table .no{
+	width:40px;
+}
+table .peopleno{
+	width:110px;
+}
+table .ope{
+	width:58px;
+}
+table .oper{
+	width:120px;
+}
+table .seatnum{
+	width:50px;
+ }
+table .eupnum{
+	width:50px;
+}
+table .labtype{
+	width:75px;
+}
+table .Responsible{
+    width:75px;
+}
+table .date{
+    width:75px;
+}
+table .teacher{
+    width:75px;
+}
+table .state{
+    width:75px;
+}
+table .time{
+    width:95px;
+}
+table .timer{
+    width:135px;
+}
+table .lendtime{
+    width:205px;
+}
+table .twoTh{
+	width:45px;
+  }
+table .threeTh{
+	width:60px;
+  }
+table .fourTh{
+	width:75px;
+	}
+table .fiveTh{
+	width:90px;
+	}
+table .sixTh{
+	width:110px;
+	}
+table .sevenTh{
+	width:140px;
+	}
+table .eightTh{
+	width:170px;
+	}
+table .nineTh{
+	width:220px;
+	}
+table .grey{
+	width:60%;
+	color:#696969;
+	margin-top:5px;
+	border-top:1px dotted #dddddd;
+}
+table .grey a{
+	color:#696969;
+}
+table .break{	
+	white-space:normal;
+	word-wrap:break-word;
+}
+tbody tr.alt{background:#efefef;}
+tbody tr.over{background:#C3D8FF;}
+td.innerTable{
+    margin:0px;
+    padding:0px;
+	border-collapse:collapse;
+}
+.innerTable table{	
+	border-collapse:collapse;
+    margin:0;
+    padding:0;
+    border:0;
+    width:100%;
+}
+.innerTable table th{	
+	border-collapse:collapse;
+	width:40px;
+    border:1px #eee solid;
+}
+.innerTable table td{
+	border-collapse:collapse;
+    border:1px #ddd solid;
+}

@@ -1,0 +1,60 @@
+{% extends "base/base_list.html" %}
+{% load i18n %}
+{% load ext_query_string %}
+{% load media %}
+{% load theme %}
+{% load context_path %}
+{% load title_field_html %}
+{% block title %}建议列表{% endblock %}
+{% block listHead %}
+
+{% endblock %}  
+
+{% block listBody %}
+{% include "site_improve/lib/left.html" %}
+<form name="deleteForm" action="" method="POST">
+<input type="hidden" name="__http_method" value="DELETE"/>
+</form>
+<table class="main" summary="List Table">
+	<caption>建议列表</caption>
+	<thead>
+		<th width="30">序号</th>
+		<th>{% title_field_html "current_content__summary" "Summary" %}</th>
+		<th width="50">{% title_field_html "current_content__type" "Type" %}</th>
+		<th width="50">{% title_field_html "current_content__priority" "Priority" %}</th>
+		<th width="80">{% title_field_html "current_content__component" "Component" %}</th>
+		<th width="50">{% title_field_html "current_content__status" "Status" %}</th>
+		<th width="100">操作</th>
+	</thead>
+	<tfoot>
+		<th colspan="7">{% include "lib/paginator.html" %}</th>
+	</tfoot>
+	<tbody>
+{% for object in object_list %}
+		<tr title="双击此行查看详细内容"
+			ondblclick="Javascript:self.location.href='{% context_path %}/site_improve/{{ object.id }}'">
+			<td>{{ first_on_page|add:forloop.counter0 }}</td>
+			<td class="left"><a href="{% context_path %}/site_improve/{{ object.id }}">{{ object.current_content.summary }}</a></td>
+			<td>{% trans object.current_content.type %}</td>
+			<td>{% trans object.current_content.priority %}</td>
+			<td>{% trans object.current_content.component %}</td>
+			<td>{% trans object.current_content.status %}</td>			
+			<td>
+			<a href="{{ object.id }}">查看</a>
+			<a href="{% context_path %}/site_improve/!edit?id={{ object.id }}">编辑</a>
+{% if user.is_staff %}			
+			<a href="Javascript:bupticetCommon.deleteConfirmUseForm('{% context_path %}/site_improve/{{ object.id }}')">删除</a>
+{% endif %}
+			</td>
+		</tr>
+{% endfor %}
+{% if results_per_page %}
+{% load repeat %}{% repeat results_per_page object_list|length %}<tr>
+	<td colspan="7">&nbsp;</td>
+</tr>
+{% endrepeat %}
+{% endif %}
+	</tbody>
+</table>
+{% include "site_improve/lib/right.html" %}
+{% endblock %}

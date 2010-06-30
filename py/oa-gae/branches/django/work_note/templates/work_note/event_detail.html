@@ -1,0 +1,94 @@
+{% extends "base/base_detail.html" %}
+{% load i18n %}
+{% block title %}查看工作记录{% endblock %}
+{% block viewHead %} {% endblock %}
+
+{% block viewBody %}
+{% include "work_note/lib/left.html" %}
+<form name="deleteForm" action="" method="POST">
+<input type="hidden" name="__http_method" value="DELETE"/>
+<input type="hidden" name="ext_query_str" value="{{ request.GET.extQueryString }}"/>
+</form>
+<table class="main" summary="view Table">
+	<caption>工作记录详细信息</caption>
+	<thead>
+		<th colspan="2"></th>
+	</thead>
+	<tfoot>
+		<th colspan="2">{% load ext_query_string %}
+			<a href="Javascript:self.location.href='./{% if request.GET.extQueryString %}?{{ request.GET.extQueryString }}{% endif %}'">工作记录列表</a>
+			{%if not object.finish %}
+				{%if not object.last_period or object.last_period.finish %}
+			<a href="{{ object.id }}/!edit{{ request.GET.extQueryString|encode_ext_query_string:"?" }}">添加工作时段</a>
+				{% else %}
+			<a href="{{ object.id }}/!finish{{ request.GET.extQueryString|encode_ext_query_string:"?" }}">结束当前工作时段再添加</a>
+				{% endif %}
+			<a href="Javascript:bupticetCommon.operateConfirm('{{ object.id }}!finish{{ request.GET.extQueryString|encode_ext_query_string:"?" }}','您确定要将这项工作标记为完成吗？')">完成</a>
+			{% endif %}
+			<a href="!edit?id={{ object.id }}{{ request.GET.extQueryString|encode_ext_query_string:"&" }}">编辑</a>
+			<a href="Javascript:bupticetCommon.deleteConfirmUseForm('{{ object.id }}')">删除</a>
+		</th>
+	</tfoot>
+	<tbody>
+		<tr>
+			<th>{% trans 'Summary' %}:</th>
+			<td>{{ object.summary }}</td>
+		</tr>
+		<tr>
+			<th>{% trans 'Start Time' %}:</th>
+			<td>{{ object.start }}</td>
+		</tr>
+		<tr>
+			<th>{% trans 'Finish Time' %}:</th>
+			<td>{%if object.finish %}{{ object.finish }}{% else %}未完成{% endif %}</td>
+		</tr>
+{%if object.finish %}
+		<tr>
+			<th>{% trans 'Total Time' %}:</th>
+			<td>{{ object.get_period_delta_str }}</td>
+		</tr>
+{% endif %}
+		<tr>
+			<th>{% trans 'Cooperation Department' %}:</th>
+			<td>{{ object.cooperation_dep }}</td>
+		</tr>
+		<tr>
+			<th>{% trans 'Aim' %}:</th>
+			<td>{{ object.aim }}</td>
+		</tr>
+		<tr>
+			<th>{% trans 'Resolved Problem' %}:</th>
+			<td>{{ object.resolved_problem }}</td>
+		</tr>
+		<tr>
+			<th>{% trans 'Leave Problem' %}:</th>
+			<td>{{ object.leave_problem }}</td>
+		</tr>
+		<tr>
+			<th>{% trans 'Content' %}:</th>
+			<td>{{ object.content }}</td>
+		</tr>
+		<tr>
+			<th>{% trans 'Period' %}:</th>
+			<td><dl>
+			{% for period in object.period_set.all %}
+	    		<dt>{{ period.start }} ~ {%if period.finish %}{{ period.finish }}{% else %}?{% endif %} <a href="{{ object.id }}/!edit?id={{ period.id }}{{ request.GET.extQueryString|encode_ext_query_string:"&" }}">编辑</a> <a href="Javascript:bupticetCommon.deleteConfirmUseForm('{{ object.id }}/{{ period.id }}')">删除</a></dt>
+	    		{% if period.content %}
+	    			<dd>{{ period.content }}</dd>
+	    		{% endif %}
+			{% endfor %}
+			</dl>
+			</td>
+		</tr>
+		<tr>
+			<th>{% trans 'Create Time' %}:</th>
+			<td>{{ object.created }}</td>
+		</tr>
+		<tr>
+			<th>{% trans 'Last Modify Time' %}:</th>
+			<td>{{ object.last_modified }}</td>
+		</tr>
+	</tbody>
+</table>
+{% include "work_note/lib/right.html" %}
+{% endblock %}

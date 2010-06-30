@@ -1,0 +1,53 @@
+{% extends "base/base_form.html" %}
+{% load i18n %}
+{% block title %}编辑站点改进建议{% endblock %}
+{% block editHead %}
+<script type="text/javascript">
+window.onload=function(){
+	var oldOnsubmit = document.forms['form'].onsubmit;
+	document.forms['form'].onsubmit = function(){
+		var check = oldOnsubmit(); 
+		var check2 = true;
+		form = document.forms['form'];
+		if(check&&check2){
+			bupticetCommon.emptyOnUnload();
+			bupticetCommon.disableSubmit();
+			return true;
+		}else{
+			return false;
+		}
+	}
+	document.forms['form'].elements['summary'].focus();
+}
+</script>
+{% endblock %}  
+
+{% block editBody %}
+{% include "site_improve/lib/left.html" %}  
+<form name="form" action="./{{ id }}" method="POST" onsubmit="return true;">
+<input type="hidden" name="submit_times" value="{{ submit_times }}"/>
+<input type="hidden" name="ext_query_str" value="{{ ext_query_str }}"/>
+{% if id %}
+<input type="hidden" name="id" value="{{ id }}"/>
+<input type="hidden" name="__http_method" value="PUT"/>
+{% endif %}
+<table class="main" summary="Edit Table">
+<caption>编辑站点改进建议</caption>
+<thead>
+<th colspan="2">
+</th>
+</thead>
+<tfoot>
+<th colspan="2">
+{% include "lib/form_buttons.html" %} 
+</th>
+</tfoot>
+<tbody>
+
+{{ form.as_table }}
+
+</tbody>
+</table>
+</form>
+{% include "site_improve/lib/right.html" %}
+{% endblock %}

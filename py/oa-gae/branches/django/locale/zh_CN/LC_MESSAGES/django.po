@@ -1,0 +1,338 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-06-12 20:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: settings.py:129
+msgid "Chinese"
+msgstr "简体中文"
+
+#: settings.py:130
+msgid "English"
+msgstr "英文"
+
+#: commons/forms/widgets.py:23
+msgid "Click this picture to select date and time."
+msgstr "请点击图片选择日期和时间。"
+
+#: commons/forms/widgets.py:54
+msgid "Click this picture to select date."
+msgstr "请点击图片选择日期。"
+
+#: site_improve/models.py:15
+msgid "Bug"
+msgstr "Bug"
+
+#: site_improve/models.py:16
+msgid "Bugs"
+msgstr "Bug"
+
+#: site_improve/models.py:19
+#: site_improve/templates/site_improve/bug_detail.html:26
+#: site_improve/templates/site_improve/bug_list.html:17 work_note/models.py:10
+#: work_note/templates/work_note/event_detail.html:33
+#: work_note/templates/work_note/event_list.html:17
+msgid "Summary"
+msgstr "概要"
+
+#: site_improve/models.py:20
+#: site_improve/templates/site_improve/bug_detail.html:30
+#: site_improve/templates/site_improve/bug_list.html:18
+msgid "Type"
+msgstr "类型"
+
+#: site_improve/models.py:20
+msgid "defect"
+msgstr "缺陷"
+
+#: site_improve/models.py:20
+msgid "enhancement"
+msgstr "改进"
+
+#: site_improve/models.py:20
+msgid "task"
+msgstr "任务"
+
+#: site_improve/models.py:21 site_improve/models.py:39
+#: site_improve/templates/site_improve/bug_detail.html:62
+#: work_note/models.py:15 work_note/models.py:58
+#: work_note/templates/work_note/event_detail.html:67
+msgid "Content"
+msgstr "内容"
+
+#: site_improve/models.py:22
+#: site_improve/templates/site_improve/bug_detail.html:34
+#: site_improve/templates/site_improve/bug_list.html:19
+msgid "Priority"
+msgstr "优先级"
+
+#: site_improve/models.py:22
+msgid "blocker"
+msgstr "很高"
+
+#: site_improve/models.py:22
+msgid "critical"
+msgstr "高"
+
+#: site_improve/models.py:22
+msgid "major"
+msgstr "一般"
+
+#: site_improve/models.py:22
+msgid "minor"
+msgstr "低"
+
+#: site_improve/models.py:22
+msgid "trivial"
+msgstr "很低"
+
+#: site_improve/models.py:23
+#: site_improve/templates/site_improve/bug_detail.html:38
+msgid "Assign to"
+msgstr "指派给"
+
+#: site_improve/models.py:24
+#: site_improve/templates/site_improve/bug_detail.html:42
+msgid "Cc"
+msgstr "抄送给"
+
+#: site_improve/models.py:25
+#: site_improve/templates/site_improve/bug_detail.html:46
+msgid "Keywords"
+msgstr "关键词"
+
+#: site_improve/models.py:26
+#: site_improve/templates/site_improve/bug_list.html:20
+msgid "Component"
+msgstr "组件"
+
+#: site_improve/models.py:26
+msgid "work_note"
+msgstr "工作事项记录"
+
+#: site_improve/models.py:26
+msgid "site_improve"
+msgstr "站点功能改进"
+
+#: site_improve/models.py:28
+#: site_improve/templates/site_improve/bug_detail.html:54
+msgid "Version"
+msgstr "版本"
+
+#: site_improve/models.py:29
+#: site_improve/templates/site_improve/bug_detail.html:58
+#: site_improve/templates/site_improve/bug_list.html:21
+msgid "Status"
+msgstr "状态"
+
+#: site_improve/models.py:29
+msgid "open"
+msgstr "打开"
+
+#: site_improve/models.py:29
+msgid "fixed"
+msgstr "解决"
+
+#: site_improve/models.py:29
+msgid "reopen"
+msgstr "重新开启"
+
+#: site_improve/models.py:29
+msgid "closed"
+msgstr "关闭"
+
+#: site_improve/models.py:32 work_note/models.py:21 work_note/models.py:59
+#: work_note/templates/work_note/event_detail.html:87
+msgid "Last Modify Time"
+msgstr "最后修改时间"
+
+#: site_improve/models.py:33 work_note/models.py:22 work_note/models.py:60
+#: work_note/templates/work_note/event_detail.html:83
+msgid "Create Time"
+msgstr "创建时间"
+
+#: site_improve/models.py:40
+msgid "Contents"
+msgstr "内容"
+
+#: site_improve/templates/site_improve/bug_detail.html:50
+msgid "component"
+msgstr "组件"
+
+#: site_improve/templates/site_improve/bug_form.html:41
+#: work_note/templates/work_note/event_form.html:42
+#: work_note/templates/work_note/period_form.html:42
+msgid "Submit"
+msgstr "提交"
+
+#: site_improve/templates/site_improve/bug_form.html:42
+#: work_note/templates/work_note/event_form.html:43
+#: work_note/templates/work_note/period_form.html:43
+msgid "Reset"
+msgstr "重置"
+
+#: site_improve/templates/site_improve/bug_form.html:44
+#: work_note/templates/work_note/event_form.html:45
+#: work_note/templates/work_note/period_form.html:45
+msgid "Cancel"
+msgstr "取消"
+
+#: templates/404.html:3 templates/404.html.py:10
+msgid "Page not found"
+msgstr "页面不存在"
+
+#: templates/404.html:12
+msgid "We're sorry, but the requested page could not be found."
+msgstr "很抱歉，找不到您所请求的页面。"
+
+#: templates/500.html:3
+msgid "Server error (500)"
+msgstr "服务器内部错误 (500)"
+
+#: templates/500.html:10
+msgid "Home"
+msgstr "主页"
+
+#: templates/500.html:10
+msgid "Server error"
+msgstr "服务器内部错误"
+
+#: templates/500.html:13
+msgid "Server Error <em>(500)</em>"
+msgstr "服务器内部错误 <em>(500)</em>"
+
+#: templates/500.html:14
+msgid ""
+"There's been an error. It's been reported to the site administrators via e-"
+"mail and should be fixed shortly. Thanks for your patience."
+msgstr ""
+"出现了一个服务器错误，这个问题已经通过电子邮件提交给了系统管理员，谢谢您的耐"
+"心等待。"
+
+#: templates/accounts/login.html:33
+msgid "Log in"
+msgstr "登录"
+
+#: templates/accounts/login.html:39
+msgid "Username:"
+msgstr "帐号"
+
+#: templates/accounts/login.html:43
+msgid "Password:"
+msgstr "密码"
+
+#: templates/accounts/password_change_done.html:3
+#: templates/accounts/password_change_done.html:11
+msgid "Password change successful"
+msgstr ""
+
+#: templates/accounts/password_change_done.html:13
+msgid "Your password was changed."
+msgstr "您的密码已经修改成功。"
+
+#: templates/accounts/password_change_form.html:3
+#: templates/accounts/password_change_form.html:11
+msgid "Password change"
+msgstr "修改密码"
+
+#: templates/accounts/password_change_form.html:13
+msgid ""
+"Please enter your old password, for security's sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr ""
+"为了保证安全，请先输入您的当前密码，然后再输入您的新密码，为了防止输入错误，"
+"请输入两次新密码。"
+
+#: templates/accounts/password_change_form.html:18
+msgid "Old password:"
+msgstr "旧密码"
+
+#: templates/accounts/password_change_form.html:20
+msgid "New password:"
+msgstr "新密码"
+
+#: templates/accounts/password_change_form.html:22
+msgid "Confirm password:"
+msgstr "确认密码"
+
+#: templates/accounts/password_change_form.html:24
+msgid "Change my password"
+msgstr "修改我的密码"
+
+#: templates/include/js_calendar.html:5
+msgid "calendar-en"
+msgstr "calendar-zh"
+
+#: work_note/models.py:12 work_note/models.py:56
+#: work_note/templates/work_note/event_detail.html:37
+#: work_note/templates/work_note/event_list.html:18
+msgid "Start Time"
+msgstr "开始时间"
+
+#: work_note/models.py:12 work_note/models.py:56
+msgid "Example: 2008-06-01 13:30:00"
+msgstr "实例： 2008-06-01 13:30:00"
+
+#: work_note/models.py:13 work_note/models.py:57
+#: work_note/templates/work_note/event_detail.html:41
+#: work_note/templates/work_note/event_list.html:19
+msgid "Finish Time"
+msgstr "完成时间"
+
+#: work_note/models.py:13 work_note/models.py:57
+msgid "Example: 2008-06-02 13:30:00"
+msgstr "实例： 2008-06-02 13:30:00"
+
+#: work_note/models.py:14 work_note/templates/work_note/event_detail.html:51
+msgid "Cooperation Department"
+msgstr "协作部门"
+
+#: work_note/models.py:16 work_note/templates/work_note/event_detail.html:55
+msgid "Aim"
+msgstr "目标"
+
+#: work_note/models.py:17 work_note/templates/work_note/event_detail.html:59
+msgid "Resolved Problem"
+msgstr "解决问题"
+
+#: work_note/models.py:18 work_note/templates/work_note/event_detail.html:63
+msgid "Leave Problem"
+msgstr "待解决问题"
+
+#: work_note/models.py:39
+msgid "days"
+msgstr "天"
+
+#: work_note/models.py:51
+msgid "Event"
+msgstr "事件"
+
+#: work_note/models.py:52
+msgid "Events"
+msgstr "事件"
+
+#: work_note/models.py:69 work_note/templates/work_note/event_detail.html:71
+msgid "Period"
+msgstr "时间段"
+
+#: work_note/models.py:70
+msgid "Periods"
+msgstr "时间段"
+
+#: work_note/templates/work_note/event_detail.html:46
+#: work_note/templates/work_note/event_list.html:20
+msgid "Total Time"
+msgstr "总时间"

@@ -1,0 +1,53 @@
+{% extends "base/base_site.html" %} 
+{% load i18n %}
+{% block title %}用户登录{% endblock %}
+
+{% block htmlHead %} 
+{% include "include/css_login.html" %} 
+{% endblock %} 
+
+{% block body %}
+
+
+<div id="loginBody">
+<form action="{{ app_path }}" method="post" id="login-form">
+
+
+
+<table class="main" summary="登录">
+	<caption>登录</caption>
+	<thead>
+		<tr>
+			<th colspan="2">
+{% if error_message %}
+	{{ error_message }}
+{% endif %}
+</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<th colspan="2">
+	 <input type="hidden" name="this_is_the_login_form" value="1" />
+    <input type="hidden" name="post_data" value="{{ post_data }}" />
+		<input type="submit" id="formSubmit" value="{% trans 'Log in' %}" />
+		</th>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<th><label for="id_username">{% trans 'Username:' %}</label></th>
+			<td><input type="text" name="username" id="id_username" /></td>
+		</tr>
+		<tr>
+			<th><label for="id_username">{% trans 'Password:' %}</label></th>
+			<td><input type="password" name="password" id="id_password" />
+			</td>
+
+		</tr>
+
+	</tbody>
+</table>
+</form>
+</div>
+{% endblock %}

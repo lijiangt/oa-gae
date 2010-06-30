@@ -1,0 +1,15 @@
+{% extends "base/base_site.html" %}
+
+{% block htmlHead %}
+{% include "include/css_list.html" %} 
+{% include "include/js_common.html" %} 
+{% include "include/table_stripe.html" %}
+{% block listHead %}
+{% endblock %}  
+{% endblock %}  
+
+{% block body %}
+<div id="listBody">
+{% block listBody %}listBody{% endblock %}
+</div>
+{% endblock %}  

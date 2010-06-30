@@ -1,0 +1,5 @@
+@import url(../../../jscalendar/calendar-blue.css);
+
+.dateSelector{cursor: pointer; border: 1px solid red;}
+.dateSelectorMouseover{cursor: pointer; border: 1px solid red;background:red;}
+.dateSelectorMouseout{cursor: pointer; border: 1px solid red;background:'';}

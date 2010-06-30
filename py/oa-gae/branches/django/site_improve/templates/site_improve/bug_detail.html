@@ -1,0 +1,80 @@
+{% extends "base/base_detail.html" %}
+{% load i18n %}
+{% block title %}查看建议{% endblock %}
+{% block viewHead %} {% endblock %}
+
+{% block viewBody %}
+{% include "site_improve/lib/left.html" %}
+<form name="deleteForm" action="" method="POST">
+<input type="hidden" name="__http_method" value="DELETE"/>
+</form>
+<div id=“container” style="width:88%;float:right;">
+<table class="main" summary="view Table">
+	<caption>建议详细信息</caption>
+	<thead>
+		<th colspan="2"></th>
+	</thead>
+</table>
+
+{% for content in object.content_set.all %}
+<table class="main" summary="view Table">
+	<thead>
+		<th colspan="2">{% ifequal content.id object.current_content.id %} 当前版本 {% endifequal %} {{ content.created }} editted by {% if content.modifier.first_name %}{{content.modifier.last_name|escape}}{{ content.modifier.first_name|escape }}{% else %}{{ content.modifier.username }}{% endif %}</th>
+	</thead>
+	<tbody>
+		<tr>
+			<th>{% trans 'Summary' %}:</th>
+			<td>{{ content.summary }}</td>
+		</tr>
+		<tr>
+			<th>{% trans 'Type' %}:</th>
+			<td>{% trans content.type %}</td>
+		</tr>
+		<tr>
+			<th>{% trans 'Priority' %}:</th>
+			<td>{% trans content.priority %}</td>
+		</tr>
+		<tr>
+			<th>{% trans 'Assign to' %}:</th>
+			<td>{{ content.assign_to }}</td>
+		</tr>		
+		<tr>
+			<th>{% trans 'Cc' %}:</th>
+			<td>{{ content.cc }}</td>
+		</tr>
+		<tr>
+			<th>{% trans 'Keywords' %}:</th>
+			<td>{{ content.keywords }}</td>
+		</tr>
+		<tr>
+			<th>{% trans 'component' %}:</th>
+			<td>{% trans content.component %}</td>
+		</tr>
+		<tr>
+			<th>{% trans 'Version' %}:</th>
+			<td>{{ content.version }}</td>
+		</tr>
+		<tr>
+			<th>{% trans 'Status' %}:</th>
+			<td>{% trans content.status %}</td>
+		</tr>
+		<tr>
+			<th>{% trans 'Content' %}:</th>
+			<td>{{ content.content }}</td>
+		</tr>
+	</tbody>
+</table>
+{% endfor %}
+
+<table class="main" summary="view Table">
+	<tfoot>
+		<th colspan="2">
+			<a href="Javascript:self.location.href='./'">建议列表</a>
+			<a href="!edit?id={{ object.id }}">编辑</a>
+			<a href="Javascript:bupticetCommon.deleteConfirmUseForm('{{ object.id }}')">删除</a>
+		</th>
+	</tfoot>
+</table>	
+</div>
+{% include "site_improve/lib/right.html" %}
+{% endblock %}

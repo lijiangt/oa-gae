@@ -1,0 +1,79 @@
+/* jqModal base Styling courtesy of;
+	Brice Burgess <bhb@iceburg.net> */
+
+/* The Window's CSS z-index value is respected (takes priority). If none is supplied,
+	the Window's z-index value will be set to 3000 by default (via jqModal.js). */
+	
+.jqmWindow {
+    display: none;    
+    position: fixed;
+    top: 17%;
+    left: 50%;    
+    margin-left: -300px;
+    width: 600px;    
+    background-color: #EEE;
+    color: #333;
+    border: 1px solid black;
+    padding: 12px;
+}
+
+.jqmOverlay { background-color: #000; }
+
+/* Background iframe styling for IE6. Prevents ActiveX bleed-through (<select> form elements, etc.) */
+* iframe.jqm {position:absolute;top:0;left:0;z-index:-1;
+	width: expression(this.parentNode.offsetWidth+'px');
+	height: expression(this.parentNode.offsetHeight+'px');
+}
+
+/* Fixed posistioning emulation for IE6
+     Star selector used to hide definition from browsers other than IE6
+     For valid CSS, use a conditional include instead */
+* html .jqmWindow {
+     position: absolute;
+     top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px');
+}
+/* another*/
+
+
+
+/* Notice CSS courtesy of;
+   Alexandre Plennevaux <alexandre@pixeline.be>,
+   Brice Burgess <bhb@iceburg.net> */
+
+div.jqmNotice {
+    display: none;
+    position: relative;
+	background:green;
+    width: 300px;
+	height:250px;
+	margin:20px auto;
+    border: 1px solid #000;
+    padding: 0;
+}
+
+div.jqmNotice .jqDrag{
+	height:25px;
+	line-height:25px;
+	background:#ccc;
+	padding-left:15px;
+	padding:0;
+	margin:0;
+    cursor: move;
+}
+div.jqmNotice .jqmClose {
+  position: absolute;
+  cursor: pointer;
+  right: 4px;
+  top: 6px;
+}
+div.jqmNotice .jqmnContent{
+  border-top:1px;
+  color:#000;
+  font:12px/18pt Comic Sans, Comic Sans MS, cursive;
+  padding:0 20px 5px;
+}
+div.jqmNotice .jqResize {
+position: absolute; 
+right: 2px; 
+bottom: 2px;
+}

@@ -1,0 +1,3 @@
+在项目目录下：
+重建数据库:			python manage.py syncdb
+启动web服务器：	python manage.py runserver

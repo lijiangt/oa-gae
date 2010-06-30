@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* view page settings */
+
+@import url(common.css);
+#viewBody table.main{
+
+}
+#viewBody table.main tbody th {
+	width: 100px;
+}

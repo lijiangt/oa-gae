@@ -1,0 +1,17 @@
+{% extends "base/base_site.html" %}
+{% block htmlHead %}
+{% include "include/css_edit.html" %} 
+{% include "include/js_common.html" %} 
+{% include "include/js_validation.html" %}
+{% include "include/js_onbeforeunload.html" %}
+{% block editHead %}
+{% endblock %}  
+{% endblock %}  
+
+{% block body %}
+<div id="editBody">
+{% block editBody %}
+editBody
+{% endblock %}
+</div>
+{% endblock %}  

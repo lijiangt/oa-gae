@@ -1,0 +1,41 @@
+
+run:
+#./manage.py runfcgi method=prefork socket=/tmp/oa_django.sock pidfile=django.pid
+./manage.py runfcgi method=threaded host=127.0.0.1 port=3033
+
+
+edit lighttpd.conf:
+server.modules              = (
+           "mod_rewrite",
+           "mod_redirect",
+           "mod_evasive",
+            "mod_alias",
+            "mod_access",
+            "mod_fastcgi",
+            "mod_accesslog",
+            "mod_compress",
+ )
+
+## a static document-root, for virtual-hosting take look at the
+## server.virtual-* options
+#server.document-root       = "/var/www/"
+
+server.document-root = "/home/lijt/workspace-core/oa"
+fastcgi.server = (
+"/oa.fcgi" => (
+"main" => (
+#"socket" => "/tmp/oa_django.sock",
+"host" => "127.0.0.1",
+"port" => 3033,
+"check-local" => "disable"
+)
+)
+)
+alias.url = (  
+    "/s_admin/" => "/home/lijt/tools/django-trunk/django/contrib/admin/media/",  
+) 
+url.rewrite = (
+"^(/s_admin/.*)$" => "$1",
+"^(/s/.*)$" => "$1",
+"^(/.*)$" => "/oa.fcgi$1"
+)
