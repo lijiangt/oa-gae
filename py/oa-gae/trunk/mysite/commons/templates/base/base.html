@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{% block title %}Title{% endblock %}</title>
+<link rel="icon" type="image/gif" href="{% load media %}{% media_url %}/icon/16.gif" />
+{% block htmlHead %}{% endblock %}
+</head>
+<body>
+<div id="container">
+{% include "lib/top.html" %}  
+{% block body %}Body{% endblock %}
+{% include "lib/bottom.html" %}  
+</div>
+</body>
+</html>

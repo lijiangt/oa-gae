@@ -1,0 +1,15 @@
+{% extends "base/base_site.html" %}
+{% block htmlHead %}
+{% include "include/css_view.html" %} 
+{% include "include/js_common.html" %} 
+{% block viewHead %}
+{% endblock %}  
+{% endblock %}  
+
+{% block body %}
+<div id="viewBody">
+{% block viewBody %}
+viewBody
+{% endblock %}
+</div>
+{% endblock %}  

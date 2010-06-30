@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* edit page settings */
+@import url(common.css);
+
+
+
+#editBody table.main{
+	
+}
+#editBody table.main tbody th {
+	width: 80px !important;
+	text-align: right;
+	padding-right:10px;
+}
+
+#editBody table.main tbody td {
+	text-align: left;
+}
+
+#editBody table.main tbody textarea {
+	width: 95%;
+	height:50px;
+}
+
+
+
+/* django and struts2 style*/
+.errorlist,.errorLabel {font-style:italic; color:red; }
+.errorMessage {font-weight:bold; text-align: center; color:red; }
+.checkboxLabel {}
+.checkboxErrorLabel {color:red; }
+.required {color:red;}

@@ -1,0 +1,108 @@
+table input{
+	margin-left:2px;
+	margin-right:5px;
+	padding-left:2px;
+	width:expression(this.type=="text"?"35%":"style");
+}
+input.little{
+	width:15%;
+	width:100px;
+	padding-left:5px;
+}
+input.large{
+	width:68%;
+}
+input.xlarge{
+	width:75%;
+}
+input.xxlarge{
+	width:84%;
+}
+input.tlarge{
+	width:65%;
+}
+
+.blank{
+	border:0;
+	border-bottom:1px solid #999;
+	padding:0 5px;
+	color:#0000ff;
+}
+.correction{
+	border:0;
+	border-bottom:1px solid #999;
+	padding:0 5px;
+	color:#0000ff;
+}
+.op input,.search input.ss{
+	font-size:12px;
+	height:20px;
+	line-height:20px;
+	width:42px;
+	margin-top:3px;
+	margin-right:2px;
+	background:url(../images/op.gif) no-repeat;
+	border:0;
+	
+}
+.op input.large{
+	width:75px;
+	background:url(../images/oplarge.gif) no-repeat;
+}
+.op input.xlarge{
+	width:90px;
+	background:url(../images/xoplarge.gif) no-repeat;
+}
+.op input:hover,.search input.ss:hover{
+	color:#f00;
+	}
+input.caps {
+	text-transform:uppercase;
+	width:45px;
+}
+table textarea{
+	margin:2px 5px 2px 2px;
+	border:1px solid #7F9DB9;
+	padding:2px 5px;
+	/* background: 5px top url(../images/'textareabg.jpg') repeat; */
+	width:95%;
+    height:75px;
+	font-size:12px;
+	line-height:1.4;
+	overflow:auto;
+}
+
+textarea.little{
+	height:50px;
+}
+
+textarea.large{
+	height:120px;
+}
+textarea.xlarge{
+	height:160px;
+}
+textarea.xxlarge{
+	height:250px;
+}
+textarea.xxxlarge{
+	height:450px;
+	width:98%;
+}
+textarea.auto{
+	height:120px;
+}
+
+	
+table select{
+	margin:2px 5px 2px 2px;
+	color:#9a6200;
+	border:1px solid #7F9DB9;
+}
+table select.large{
+	width:45%;
+	height:240px;
+}
+table select option{
+	padding-right:10px;
+}

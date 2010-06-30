@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* list page settings */
+@import url(common.css);
+
+#listBody table.main {
+	border:#417690 1px solid;
+	float:right;
+	table-layout: fixed;
+}
+
+#listBody table.main thead a {
+	color: #ed7d00;
+}
+
+#listBody table.main thead th {
+	white-space: nowrap;
+}
+
+#listBody table.main thead th.orderTh{
+	width:36px;
+}
+#listBody table.main thead th.uuidTh{
+	width:200px;
+}
+#listBody table.main thead th.ipTh{
+	width:100px;
+}
+#listBody table.main thead th.datetimeWithSecTh{
+	width:120px;
+}
+#listBody table.main thead th.operateOneItemTh{
+	width:40px;
+}
+#listBody table.main thead th.operateTwoItemTh{
+	width:60px;
+}
+#listBody table.main thead th.operateThreeItemTh{
+	width:80px;
+}
+
+#listBody table.main tbody th {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#listBody table.main tbody td {
+	text-align: center;
+	text-overflow: ellipsis;
+}
+#listBody table.main tbody td.leftTd{
+	text-align: left;
+}
+#listBody table.main tbody td.rightTd{
+	text-align: right;
+}
+#listBody table.main tfoot th {
+	text-align: right;
+
+#listBody table.main tbody tr.alt td {
+	background: #ecf6fc;
+}
+
+#listBody table.main tbody tr.over td {
+	background: #bcd4ec;
+}

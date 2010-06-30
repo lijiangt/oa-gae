@@ -1,0 +1,152 @@
+@import url(../images/'login.css');
+@import url(../images/'form.css');
+@import url(../images/'table.css');
+@import url(../images/'dict.css');
+@import url(../images/'question.css');
+
+html{
+	
+}
+*{
+	margin:0;
+	padding:0;
+	}
+body{
+	font-size:12px;
+	line-height:1.6;
+	background:#fff;
+	}
+a:link{
+	color:#000000;
+	text-decoration:none;
+	}
+a:visited{
+	color:#000000;
+	text-decoration:none;
+	}
+a:hover{
+	color: #FF0000;
+	text-decoration:none;
+	}
+a:active{
+	color:#000000;
+	text-decoration:none;
+	}
+a.button{
+	height:25px;
+	line-height:25px;
+	border:1px solid #dddddd;
+	background:#eee;
+	padding:3px 10px;
+	margin:2px 5px;
+}
+a.button:hover{
+	background:#dddddd;
+	border:1px solid #696969;
+}
+img{
+    border:0px;
+}
+input{	
+    font-family:sans-serif;
+}
+.red{
+	color:#ff0000;
+}
+.green{
+	color:green;
+}
+.hidden{
+	display:none;
+}
+.left{
+	text-align:left;
+}
+.right{
+	text-align:right;
+}
+span.init{
+	text-decoration:blink;
+}
+#container{
+    width:100%;
+}
+#head{
+    height:66px;
+    overflow:hidden;
+	background:#3B5999;
+	color:#fff;
+	border-bottom:1px solid #254588;
+}
+
+#head ul li{
+	padding:0px 15px;
+	height:22px;
+	float:left;
+	margin-left:5px;
+	list-style-type:none;
+}
+#head #info{
+    float:right;
+    width:84%;
+    clear:right;
+	height:66px;
+	border-collapse:collapse;
+}
+
+#wrap{
+    clear:both;
+	height:100%;
+}
+#left{
+    float:right;
+    width:25%;
+	height:500px;
+	overflow-x:hidden;
+	overflow-y:scroll;
+    border-collapse:collapse;
+}
+#leftarea{
+	padding:6px 2px;
+	background:#DEE4ED;
+	border-right:1px solid #C0C7D9;
+	border-bottom:1px solid #C0C7D9;
+}
+#leftarea h5{
+    font-size:12px;
+	height:22px;
+	line-height:22px;
+	background:#eee;
+    padding-left:20px;
+}
+#leftarea ul{
+	margin:5px 0;
+}
+#leftarea ul li{
+    list-style-type:none;
+    font-size:12px;
+    margin-left:20px;
+}
+
+
+#main{
+    border-collapse:collapse;
+    float:left;
+    width:75%;	
+	height:500px;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	background:#fff;
+}
+#mainarea{
+	padding:5px 0 15px 5px ;
+}
+
+#foot{
+	border-top:1px solid #999;
+	clear:both;
+    height:45px;
+	line-height:45px;
+	text-align:center;
+	background:#eee;
+}

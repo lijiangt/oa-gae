@@ -1,0 +1,9 @@
+{% load i18n %}
+<input type="submit" id="formSubmit" value="{% trans 'Submit' %}" name="submit"/>
+<input type="button" id="formReset" value="{% trans 'Reset' %}" name="formReset" onclick="bupticetCommon.resetConfirm(this.form)"/>
+{% if display_cancel and meta.HTTP_REFERER %}
+<input type="button" id="formCancel" value="{% trans 'Cancel' %}" name="cancel" onclick="bupticetCommon.cancelConfirm({{ submit_times }})"/>
+<input type="hidden" name="display_cancel" value="true"/>
+{% else %}
+<input type="hidden" name="display_cancel" value=""/>
+{% endif %}

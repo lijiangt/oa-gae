@@ -1,0 +1,27 @@
+{% if results_per_page %}
+{% load action_uri %}
+共{{ hits }}条记录 本页显示{{ object_list|length }}条 共{{ pages }}页 
+{% ifequal pages 1 %}
+第1页
+{% else %}
+第<select onchange="javascript:bupticetCommon.goOptionValueUrl(this)">
+{% for p in page_range %}
+	<option value="{% action_uri "pageNum" forloop.counter %}"{% ifequal page forloop.counter %} selected="selected"{% endifequal %}>{{ forloop.counter }}</option>
+{% endfor %}
+</select>页
+{% endifequal %}
+{% if has_previous %}
+<a href="{% action_uri "pageNum" 1 %}" title="首页">首页</a> 
+<a href="{% action_uri "pageNum" previous %}" title="上一页">上一页</a> 
+{% else %}
+首页
+上一页
+{% endif %} 
+{% if has_next %}
+<a href="{% action_uri "pageNum" next %}" title="下一页">下一页</a> 
+<a href="{% action_uri "pageNum" pages %}"	title="尾页">尾页</a>
+{% else %}
+下一页
+尾页
+{% endif %} 
+{% endif %} 

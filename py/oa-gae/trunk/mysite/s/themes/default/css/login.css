@@ -1,0 +1,111 @@
+#login1{
+    background:url(../img/m_back.gif) no-repeat;
+    width:250px;
+    height:250px;
+   }
+   #login1 .but{
+    background:url(../img/m_button.gif) right no-repeat;
+    width:47px;
+    height:22px;
+    margin:0 auto;
+    margin-top:-20px;
+     margin-top:-20px\9;
+    margin-right:30px;
+   }
+   #login1 .but input{
+    background:url();
+    width:47px;
+    border:none;
+    margin:0 auto;
+    padding-top:3px;
+    *padding-top:5px;
+    font-family:'宋体';
+    font-size:12px;
+    margin-left:5px!important;
+    *+margin-left:10px;
+    *margin-right:-35px;
+    cursor:pointer;
+   }
+#login{
+   font-size:14px;
+    margin:75px auto;
+    padding:40px 15px 40px 40px;
+    width:265px;
+    background:#f9f9f9;
+    border:1px solid #CAD0DC;
+}
+ 
+#login .sbutton{
+    margin:0 2px 0 0;
+}
+#login .info{
+    font-weight:bold;
+    border-bottom:1px solid #9C9C9C;
+    height:25px;
+    line-height:25px;
+    margin-bottom:15px;
+}
+#login .main{
+	text-align:left;
+    margin-bottom:5px;
+}
+#login .main input{
+    font-family:sans-serif;
+    width:170px;
+    padding-left:2px;
+    vertical-align:middle;
+    margin-right:2px;
+}
+#login .main input.little{
+    width:65px;
+}
+#login .main img{
+    line-height:1;
+    width:44px;
+    height:18px;
+}
+
+#login .ss{
+    margin-top:15px;
+    padding-left:35px;
+}
+#login .sendpass{
+    font-size:12px;
+}
+#login #logininfo{
+    height:45px;
+    line-height:45px;
+    padding-left:70px;
+    color:blue;
+}
+#loginBody{
+    text-align:center;
+}
+#loginBody table{
+	margin:0 auto;
+    width:300px;
+}
+#loginBody table th{
+    width:20%;
+    text-align:right;
+    padding-left:10px;
+    padding-right:10px;
+   	white-space:nowrap;
+    word-break:break-all;
+    
+}
+#loginBody table th div{
+	margin:0 auto;
+	text-align:center;
+}
+#loginBody table th input{
+	cursor:pointer;
+}
+#loginBody table td{
+    width:30%;
+    text-align:left;
+    padding-left:10px;
+}
+#loginBody table td input{
+	width:80%;
+}

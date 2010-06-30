@@ -1,0 +1,40 @@
+application: weboa
+version: 3
+runtime: python
+api_version: 1
+
+default_expiration: "3650d"
+
+handlers:
+- url: /s
+  static_dir: s
+
+- url: /work_note/.*
+  script: main.py
+  login: required
+  
+- url: /site_improve/.*
+  script: main.py  
+  login: required
+  
+- url: /.*
+  script: main.py
+
+skip_files: |
+ ^(.*/)?(
+ (app\.yaml)|
+ (app\.yml)|
+ (index\.yaml)|
+ (index\.yml)|
+ (#.*#)|
+ (.*~)|
+ (.*\.py[co])|
+ (.*/RCS/.*)|
+ (\..*)|
+ (django/test.*)|
+ (django/contrib/(?!(contenttypes|__init__|auth)).*)|
+ (django/conf/locale.*)|
+ (django/bin.*)|
+ (.*\.jsp)|
+ )$
+ 

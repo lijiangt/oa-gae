@@ -1,0 +1,49 @@
+#questionBody{
+    margin:0;
+    border:1px solid #dddddd;
+    padding:5px 15px;
+    font-size:14px;
+    line-height:1.6;
+    background:#fff;
+}
+#questionBody table{
+    width:100%;
+}
+#questionBody dl p,#questionBody .questiontitle p{
+    display:inline;
+}
+#questionBody dl dd{
+    padding-left:25px;
+}
+
+#questionBody textarea{
+    width:95%;
+    height:120px;
+}
+#questionBody .section{
+    padding:5px 0;
+    margin:5px 0;
+}
+#questionBody .paper{
+    
+}
+.sectiontitle{
+    border:1px solid #dddddd;
+    padding:5px;
+    margin:10px 0;
+}
+
+#select{
+	background:#eee;
+	padding:5px 0;
+	border:1px solid #999;
+	border-left:0px;
+}
+select.selected{
+	width:620px;
+	height:140px;
+}
+select.selector{
+	width:620px;
+	height:240px;
+}
